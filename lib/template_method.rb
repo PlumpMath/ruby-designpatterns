@@ -11,28 +11,18 @@ class Hero
   end
 end
 
-class Warrior
-  attr_reader :damage, :abilities
-
+class Warrior < Hero
   def initialize 
     @damage = 15
     @abilities = [:strike]
   end
 
-  def attack
-    "Attacked dealing #{damage} damage"
-  end
 end
 
-class Mage
-  attr_reader :damage, :abilities
-
+class Mage < Hero
   def initialize 
     @damage = 7
     @abilities = [:magic_arrow]
   end
 
-  def attack
-    "Attacked dealing #{damage} damage"
-  end
 end
